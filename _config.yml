@@ -1,6 +1,6 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
+title:            Simon Lia-Jonassen
+description:      Yet another programming blog.
+disqus_shortname: simonsimious
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
@@ -9,33 +9,29 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Simon Lia-Jonassen
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  bio:            "Yay, that's me!"
+  # email:          simon.jonassen@gmail.com
+  # stackexchange:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  twitter:        simonsimious
+  github:         s-j
+  linkedin:       simonjonassen
+  flickr:         icdeadpxlz
+  scholar:        1bVNXKiW8l8C
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics: UA-48074150-1
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Oslo/Norway
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -49,7 +45,7 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-paginate: 5
+paginate: 10
 
 kramdown:
   auto_ids: true
