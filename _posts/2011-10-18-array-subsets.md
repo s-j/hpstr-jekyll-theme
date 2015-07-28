@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2011-10-18 12:00:00+01:00
 layout: post
-title: Print all possible, non-empty subsets of an array
+title: All subsets of an array
 tags: [java, programming, algorithms, bit-twiddling]
 share: true
 ---
