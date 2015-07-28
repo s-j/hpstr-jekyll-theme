@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2014-08-17 16:55:00+01:00
 layout: post
-title: Extracting the sign, exponent and mantissa from a Float in Java
+title: Float represenation in Java
 tags: [java, programming, numbers]
 share: true
 ---
@@ -15,7 +15,7 @@ int sign = bits >>> 31;
 int exp = (bits >>> 23 & ((1 << 8) - 1)) - ((1 << 7) - 1);
 int mantissa = bits & ((1 << 23) - 1);
 System.out.println(sign + " " + exp + " " + mantissa + " " +
-    Float.intBitsToFloat((sign << 31) | (exp + ((1 << 7) - 1)) << 23 | mantissa));
+  Float.intBitsToFloat((sign << 31) | (exp + ((1 << 7) - 1)) << 23 | mantissa));
 {% endhighlight %}
 
 The same approach can be used for double’s (11 bit exponent and 52 bit mantissa).
@@ -25,7 +25,7 @@ long sign = bits >>> 63;
 long exp = (bits >>> 52 & ((1 << 11) - 1)) - ((1 << 10) - 1);
 long mantissa = bits & ((1L << 52) - 1);
 System.out.println(sign + " " + exp + " " + mantissa + " " +
-    Double.longBitsToDouble((sign << 63) | (exp + ((1 << 10) - 1)) << 52 | mantissa));
+  Double.longBitsToDouble((sign << 63) | (exp + ((1 << 10) - 1)) << 52 | mantissa));
 {% endhighlight %}
 
 For more information look [here](http://www.artima.com/underthehood/floatingP.html).
