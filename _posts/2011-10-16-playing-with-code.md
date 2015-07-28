@@ -19,36 +19,36 @@ Sequences can be viewed as numbers: 1 : 1 , 2 : 11 2, 3: 111 12 21 3, etc. This 
 A simple solution is as follows:
 {% highlight java %}
 public class Balls {
-	public static String balls(int x){
+	public static String balls(int x) {
 		String ret = "";
 		for (int i=1; i<=x; i++) ret += "(";
 		for (int i=1; i<=x; i++) ret += ")";
 		return ret;
 	}
 
-	public static String print(String prefix, int x){
-		if (x == 0){
+	public static String print(String prefix, int x) {
+		if (x == 0) {
 			return prefix + " ";
-		} else if (x==1){
+		} else if (x == 1) {
 			return prefix + "() ";
 		} else {
 			String ret = "";
-			for (int i=1; i<=x; i++){
-				ret += prefix + print(balls(i), x-i);
+			for (int i = 1; i <= x; i++){
+				ret += prefix + print(balls(i), x - i);
 			}
 			return ret;
 		}
 	}
 
-	public static String print(int x){
-		return print("",x);
+	public static String print(int x) {
+		return print("", x);
 	}
 
-	public static void main(String[] args){
-		System.out.println(1+":"+print(1));
-		System.out.println(2+":"+print(2));
-		System.out.println(3+":"+print(3));
-		System.out.println(4+":"+print(4));
+	public static void main(String[] args) {
+		System.out.println(1 + ":" + print(1));
+		System.out.println(2 + ":" + print(2));
+		System.out.println(3 + ":" + print(3));
+		System.out.println(4 + ":" + print(4));
 	}
 }
 {% endhighlight %}
@@ -56,27 +56,32 @@ public class Balls {
 Now, the problem with this solution is recursion and repeated calls to same print(String,int) and balls(int). The running time is O(2^n). A better solution is as follows (perhaps ArrayList can be swaped out with an array):
 
 {% highlight java %}
-public static String printDP(int x){
-	ArrayList prints[] = new ArrayList[x+1];
-	if (x==0) return "";
-	else if (x==1) return "()";
+public static String printDP(int x) {
+	ArrayList prints[] = new ArrayList[x + 1];
+	if (x == 0) {
+		return "";
+	} else if (x == 1) {
+		return "()";
+	}
 	prints[0] = new ArrayList();
 	prints[0].add("");
 	prints[1] = new ArrayList();
 	prints[1].add("()");
-	String pres[] = new String[x+1];
+	String pres[] = new String[x + 1];
 	pres[0] = "";
-	for (int i=1;i<=x; i++) pres[i] = "(" + pres[i-1] + ")";
-	for (int i=2; i<=x; i++) {
+	for (int i = 1;i <= x; i++) {
+		pres[i] = "(" + pres[i - 1] + ")";
+	}
+	for (int i = 2; i <= x; i++) {
 		prints[i] = new ArrayList();
-		for (int j=1; j<=i; j++) {
-			for (String s : prints[i-j]){
+		for (int j = 1; j <= i; j++) {
+			for (String s : prints[i - j]) {
 				prints[i].add(pres[j] + s);
 			}
 		}
 	}
-	String ret ="";
-	for (String s : prints[x]){
+	String ret = "";
+	for (String s : prints[x]) {
 		ret += s + " ";
 	}
 	return ret;
