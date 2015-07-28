@@ -11,14 +11,16 @@ share: true
 Finding all possible, non-empty subsets of an array is actually a really simple task. Everything you need is a counter between 1 and 2^n-1, where n is the number of entries. For each possible value of the counter check it’s bits - 1 at position i means that i'th value of the array is present in the particular subset. No recursion, only shifts and additions.
 
 {% highlight java %}
-int[] numbers = {1,2,3,4};
+int[] numbers = { 1, 2, 3, 4 };
 int n = numbers.length;
-int np = 1<<n;
-for (int i=1; i<np; i++){
+int np = 1 << n;
+for (int i = 1; i < np; i++) {
 	int bitv = i;
 	int pos = 0;
-	while (bitv > 0){
-		if ((bitv & 1) == 1) System.out.print(numbers[pos] + " ");
+	while (bitv > 0) {
+		if ((bitv & 1) == 1) {
+			System.out.print(numbers[pos] + " ");
+		}
 		bitv >>= 1;
 		pos++;
 	}
