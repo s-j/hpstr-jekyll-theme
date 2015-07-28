@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2011-11-20 12:00:00+01:00
 layout: post
-title: Find the K-th smallest element in an unsorted array
+title: K-th smallest element
 tags: [algorithms, puzzles]
 share: true
 ---
