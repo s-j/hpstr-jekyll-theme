@@ -8,7 +8,7 @@ tags: [java, programming, algorithms, bit-twiddling]
 share: true
 ---
 
-It’s actually a really simple task. Everything you need is a counter between 1 and 2^n-1, where n is the number of entries. For each possible value of the counter check it’s bits - 1 at position i means that i'th value of the array is present in the particular subset. No recursion, only shifts and additions.
+Finding all possible, non-empty subsets of an array is actually a really simple task. Everything you need is a counter between 1 and 2^n-1, where n is the number of entries. For each possible value of the counter check it’s bits - 1 at position i means that i'th value of the array is present in the particular subset. No recursion, only shifts and additions.
 
 {% highlight java %}
 int[] numbers = {1,2,3,4};
