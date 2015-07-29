@@ -4,9 +4,9 @@ title: Talks and Publications
 comments: false
 modified: 2015-05-05
 image:
-feature: linkedin-19.jpg
-credit: tandswebdesign
-creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
+  feature: linkedin-19.jpg
+  credit: tandswebdesign
+  creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
 ---
 
 ### Talks
