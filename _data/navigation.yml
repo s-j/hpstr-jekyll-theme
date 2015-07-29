@@ -1,4 +1,6 @@
 # Menu navigation links
 
 - title: Publications
-  url: /about/
+  url: /publications/
+- title: Projects
+  url: /projects/
