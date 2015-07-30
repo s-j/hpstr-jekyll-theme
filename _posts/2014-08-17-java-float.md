@@ -7,7 +7,7 @@ title: Float represenation in Java
 tags: [java, programming, numbers]
 share: true
 ---
-This simple example that illustrates how to extract the sign (the leftmost bit), exponent (the 8 following bits) and mantissa (the 23 rightmost bits) from a float in Java.
+This example illustrates how to extract the sign (the leftmost bit), exponent (the 8 following bits) and mantissa (the 23 rightmost bits) from a float in Java.
 
 {% highlight java %}
 int bits = Float.floatToIntBits(-0.005f);
