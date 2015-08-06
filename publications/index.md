@@ -8,7 +8,7 @@ image:
   credit: tandswebdesign
   creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
 ---
-
+<div style="font-size:16px">
 ### Talks
 <ol>
 <li><a href="http://www.slideshare.net/s-j/talk-47165016"><strong>Efficient Query Processing in Web Search Engines</strong> – <em>Guest Lecture, UiO 2015.</em></a></li>
@@ -91,3 +91,4 @@ image:
 <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">Analysis of recursive algorithms (in Norwegian, 2007).</a></li>
 <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lecture notes in &#8220;Algorithms and Data Structures&#8221; made between 2005 and 2007.</a></li>
 </ol>
+</div>
