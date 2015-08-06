@@ -8,9 +8,9 @@ image:
   credit: tandswebdesign
   creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
 ---
-<div style="font-size:16px">
+ 
 ### Talks
-<ol>
+<ol style="font-size:16px">
 <li><a href="http://www.slideshare.net/s-j/talk-47165016"><strong>Efficient Query Processing in Web Search Engines</strong> – <em>Guest Lecture, UiO 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/leveraging-47111723"><strong>Leveraging Big Data and Real-Time Analytics at Cxense</strong> – <em>Guest Lecture, NTNU 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/yet-another-intro-to-apache-spark"><strong>A brief introduction to Apache Spark</strong> – <em>Brown Bag Session, Cxense 2014.</em></a></li>
@@ -24,7 +24,7 @@ image:
 </ol>
 
 ### Theses
-<ol>
+<ol style="font-size:16px">
  <li><strong>Efficient Query Processing in Distributed Search Engines</strong>
 	 – <em>PhD Thesis, NTNU 2013.</em><br/>
 	 [ <a href="http://ntnu.diva-portal.org/smash/record.jsf?pid=diva2%3A606512&dswid=-8189">Abstract</a>
@@ -36,7 +36,7 @@ image:
 </ol>
 
 ### Publications
-<ol>
+<ol style="font-size:16px">
  <li><strong>Improving The Performance of Pipelined Query Processing With Skipping — and its Comparison to Document-Wise Partitioning</strong> – with Svein Erik Bratsberg.<em>The World Wide Web Journal, 17(5), pp 949-967, Springer 2014.</em><br/>
  [ <a href="http://link.springer.com/article/10.1007/s11280-013-0260-2">SpringerLink</a> ]
  </li>
@@ -87,8 +87,7 @@ image:
 </ol>
 
 ### Other
-<ol>
+<ol style="font-size:16px">
 <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">Analysis of recursive algorithms (in Norwegian, 2007).</a></li>
 <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lecture notes in &#8220;Algorithms and Data Structures&#8221; made between 2005 and 2007.</a></li>
 </ol>
-</div>
