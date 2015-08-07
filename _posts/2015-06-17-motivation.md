@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2015-06-17 08:55:00+01:00
 layout: post
-title: Motivation
+title: On motivation
 tags: [self, motivation, programming]
 share: true
 ---
