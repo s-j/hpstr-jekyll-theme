@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Invited talk at LSDS-IR 2015
 comments: false
 modified: 2015-08-01
 image:
