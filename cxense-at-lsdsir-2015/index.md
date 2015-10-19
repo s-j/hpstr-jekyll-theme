@@ -26,8 +26,5 @@ Cxense helps companies understand their audience and build great online experien
 <h3>Demo: Using Audience Segments to Drive Targeted Advertising with Cxense Display</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MIRR383Q-AU" frameborder="0" allowfullscreen></iframe>
 
-<h3>Demo: The Power of Big Data for News Media</h3>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/NXXzlCRksBw" frameborder="0" allowfullscreen></iframe>
-
 <h3>How to pronounce Cxense?</h3>
 <iframe width="420" height="315" src="https://www.youtube.com/embed/RhSKws-fdVE" frameborder="0" allowfullscreen></iframe>
