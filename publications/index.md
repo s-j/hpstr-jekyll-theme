@@ -11,7 +11,7 @@ image:
  
 ### Talks
 <ol style="font-size:16px">
-<li><a href="http://www.slideshare.net/s-j/largescale-realtime-data-management-for-engagement-and-monetization"><strong>Large-Scale Real-Time Data Management for Engagement and Monetization</strong> – <em>Invited talk, LSDSIR@CIKM 2015.</em></a></li>
+<li><a href="http://www.slideshare.net/s-j/largescale-realtime-data-management-for-engagement-and-monetization"><strong>Large-Scale Real-Time Data Management for Engagement and Monetization</strong> – <em>Invited talk, LSDS-IR@CIKM 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/talk-47165016"><strong>Efficient Query Processing in Web Search Engines</strong> – <em>Guest Lecture, UiO 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/leveraging-47111723"><strong>Leveraging Big Data and Real-Time Analytics at Cxense</strong> – <em>Guest Lecture, NTNU 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/yet-another-intro-to-apache-spark"><strong>A brief introduction to Apache Spark</strong> – <em>Brown Bag Session, Cxense 2014.</em></a></li>
