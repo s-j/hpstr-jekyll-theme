@@ -37,6 +37,14 @@ image:
 
 ### Publications
 <ol style="font-size:16px">
+<li><strong>Large-Scale Real-Time Data Management for Engagement and Monetization</strong>. <em>Proc. of the 12th International Workshop on Large-Scale and Distributed Systems for Information Retrieval (LSDS-IR), pp 1-2, ACM, 2015.</em><br/>
+ [ <a href="http://dl.acm.org/citation.cfm?doid=2809948.2809953">ACM</a> ]
+ </li>
+  
+<li><strong>Improving dynamic index pruning via linear programming</strong>. <em>Proc. of the 12th International Workshop on Large-Scale and Distributed Systems for Information Retrieval (LSDS-IR), pp 21-25, ACM, 2015.</em><br/>
+ [ <a href="http://dl.acm.org/citation.cfm?doid=2809948.2809951">ACM</a> ]
+ </li>
+ 
  <li><strong>Improving The Performance of Pipelined Query Processing With Skipping — and its Comparison to Document-Wise Partitioning</strong> – with Svein Erik Bratsberg.<em>The World Wide Web Journal, 17(5), pp 949-967, Springer 2014.</em><br/>
  [ <a href="http://link.springer.com/article/10.1007/s11280-013-0260-2">SpringerLink</a> ]
  </li>
