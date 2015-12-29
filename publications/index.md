@@ -22,7 +22,7 @@ image:
      <strong>Efficient Query Processing in Distributed Search Engines</strong>
 	 – <em>PhD Defense, NTNU 2013.</em></a>
  </li>
- <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lectures in Algorithms and Data Structures made between 2005 and 2008.</a> like for example <a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">a note analysis of recursive algorithms.</a></li>
+ <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lectures in Algorithms and Data Structures held between 2005 and 2008.</a> For example <a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">a note on complexity analysis of recursive algorithms</a>.</li>
 </ol>
 
 ### Theses
