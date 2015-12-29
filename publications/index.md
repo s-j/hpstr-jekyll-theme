@@ -9,7 +9,7 @@ image:
   creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
 ---
  
-### Talks
+### Talks and lectures
 <ol style="font-size:16px">
 <li><a href="http://www.slideshare.net/s-j/largescale-realtime-data-management-for-engagement-and-monetization"><strong>Large-Scale Real-Time Data Management for Engagement and Monetization</strong> – <em>Invited talk, LSDS-IR@CIKM 2015.</em></a></li>
 <li><a href="http://www.slideshare.net/s-j/talk-47165016"><strong>Efficient Query Processing in Web Search Engines</strong> – <em>Guest Lecture, UiO 2015.</em></a></li>
@@ -22,6 +22,9 @@ image:
      <strong>Efficient Query Processing in Distributed Search Engines</strong>
 	 – <em>PhD Defense, NTNU 2013.</em></a>
  </li>
+ <li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lecture notes in &#8220;Algorithms and Data Structures&#8221; made between 2005 and 2008.</a> like for example <a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">a note analysis of recursive algorithms.</a></li>
+</ol>
+
 </ol>
 
 ### Theses
@@ -93,10 +96,4 @@ image:
  <li><strong>Impact of the Query Model and System Settings on Performance of Distributed Inverted Indexes</strong> – <em>with Svein Erik Bratsberg. Proceedings of the 22nd Norwegian Informatics Conference (NIK), pp 143-154, Trondheim, Norway, Tapir Akademisk Forlag 2009.</em><br/>
  [ <a href="http://www.nik.no/2009/13-Jonassen.pdf">PDF</a> ]
 </li>
-</ol>
-
-### Other
-<ol style="font-size:16px">
-<li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/2008/2008-09-19-ka.pdf">Analysis of recursive algorithms (in Norwegian, 2007).</a></li>
-<li><a href="http://www.idi.ntnu.no/emner/tdt4120/notater/">A number of lecture notes in &#8220;Algorithms and Data Structures&#8221; made between 2005 and 2007.</a></li>
 </ol>
