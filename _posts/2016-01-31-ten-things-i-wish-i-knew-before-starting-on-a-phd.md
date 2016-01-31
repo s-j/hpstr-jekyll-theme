@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2016-01-31 13:11:00+01:00
 layout: post
-title: Ten things I wish I knew before starting on my PhD
+title: Ten things I wish I knew before starting on a PhD
 tags: [self, phd, research]
 share: true
 ---
