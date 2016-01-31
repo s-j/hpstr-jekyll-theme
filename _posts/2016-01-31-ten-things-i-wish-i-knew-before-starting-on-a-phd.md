@@ -74,7 +74,7 @@ So here it goes:
    
    – Ok, think this: Eventually it will work out. And if not, there will be something else. One way or another, in five years from now you will be in a completely different state and none of this will matter at all. In fact, you will look back and remember only the best parts – that is the exotic places, banquets and drinks.
    
-   For now, just focus on the small things – writing a good paragraph, finding a clever way to present a result, typing another block of code, running another experiment, enjoying the paper you read, etc. Whatever you do right – focus only on this, and afterwards leave your work at the office.
+   For now, just focus on the small things – writing a good paragraph, finding a clever way to present a result, typing another block of code, running another experiment, enjoying the paper you read, etc. Whatever you do right now – focus only on this, and afterwards leave your work at the office.
    
 10. **Enjoy your spare time, meet new people and friends**
     
