@@ -13,9 +13,9 @@ So here it goes:
 
 1. **Taking a PhD is not the same as being a student**
    
-   Getting a PhD is not about learning, as about finding things out on your own. So it does not really help to take any courses, even the mandatory ones (apart from just getting them off your requirements list). There are also no curriculum and no final exam. And most importantly every minute counts, so spend it by doing actual research.
+   Getting a PhD is not about learning as about finding things out on your own. So it does not really help to take any courses, even the mandatory ones (apart from just getting them off your requirements list). There are also no curriculum and no final exam. And most importantly every minute counts, so spend it by doing actual research.
    
-2. **Prepare to fail a lot and even fail completely**
+2. **Prepare to fail a lot and even to fail completely**
    
    Good conferences have acceptance rates below 20%, which means that your paper is very likely to be rejected. Perhaps with a harsh criticism from an arrogant reviewer who thinks he is clever and funny. But hey, that is his job and a paper does not define you as a person anyway. So be thankful, use the feedback for improvement, resubmit, learn from it and move on.
    
@@ -25,7 +25,7 @@ So here it goes:
    
 3. **Start publishing and going to conferences early**
    
-   It is funny, but for the most PhD's I know the number of papers per year seems to grow exponentially during the first few years. This means that you can nearly double the number of papers by publishing your first paper one year earlier. Well, the catch is in my previous point – most likely you will get a reject, but in the worst case you will learn from this process, and in the best case you will go somewhere exotic, warm and nice, get some drinks and have some fun.
+   It is funny, but for the most PhD's I know the number of papers per year seems to grow exponentially during the first few years. This means that you can nearly double the number of papers by publishing your first paper one year earlier. Well, the catch is in my previous point – most likely you will get a reject, but in the worst case you will learn from this, and in the best case you will go somewhere exotic, warm and nice, get some drinks and have some fun.
    
 4. **Find the conferences you want to go, read the best papers from the past two or three years and copy**
    
