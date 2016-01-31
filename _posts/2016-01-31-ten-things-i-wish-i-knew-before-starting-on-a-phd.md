@@ -72,7 +72,7 @@ So here it goes:
    
    You time is limited, most of the PhD programs are over three years – that is more than a thousand days even subtracted vacations and days off. So in the beginning it sounds like an infinite amount of time, but suddenly you find out that a half of that time has gone and you haven't got anywhere. You slip into a state where you cannot think about work when you are there and you cannot think about anything else but work when doing anything else...
    
-   – Ok, think this: Eventually it will work out. And if not, there will be something else. One way or another, in five years from now you will be in a completely different state and none of this will matter at all. In fact, you will look back and remember only the best parts – that is exotic places, banquets and drinks.
+   – Ok, think this: Eventually it will work out. And if not, there will be something else. One way or another, in five years from now you will be in a completely different state and none of this will matter at all. In fact, you will look back and remember only the best parts – that is the exotic places, banquets and drinks.
    
    For now, just focus on the small things – writing a good paragraph, finding a clever way to present a result, typing another block of code, running another experiment, enjoying the paper you read, etc. Whatever you do right – focus only on this, and afterwards leave your work at the office.
    
