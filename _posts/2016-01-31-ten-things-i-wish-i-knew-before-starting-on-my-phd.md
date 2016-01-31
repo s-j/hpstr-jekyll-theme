@@ -7,25 +7,25 @@ title: Ten things I wish I knew before starting on my PhD
 tags: [self, phd, research]
 share: true
 ---
-Taking a PhD is about defining yourself as an independent researcher, becoming a field expert and evolving as a person. A journey, with lots of pitfalls and setbacks, some times exciting and pleasant, some times exhausting and seemly impossible, mostly unplanned and completely unknown beforehand, but hopefully bringing you to the right place at the right time (that is you defense). At least, this is what my PhD was like. Below, I've written down ten things I've learned mostly by trying and failing and then doing the opposite and nailing it. I hope some of these will be useful to the PhD students out there and perhaps make their journeys a little bit more straight-forward.
+Taking a PhD is about defining yourself as an independent researcher, becoming a field expert and evolving as a person. A journey, with lots of pitfalls and setbacks, some times exciting and pleasant, some times exhausting and seemly impossible, mostly unplanned and completely unknown beforehand, but hopefully bringing you to the right place at the right time (that is your defense). At least, this is what my PhD was like. Below, I've written down ten things I've learned mostly by trying and failing and then doing the opposite and nailing it. I hope some of these tips will be useful to the PhD students out there and perhaps make their journeys a little bit more straight-forward.
 
 So here it goes:
 
 1. **Taking a PhD is not the same as being a student**
    
-   Getting a PhD is not about learning, as about finding things out on your own. So it does not really help to take any courses, even the mandatory ones, apart from just getting them off your requirements list. There are also no curriculum and no final exam. And most importantly every minute counts, so spend it by doing actual research.
+   Getting a PhD is not about learning, as about finding things out on your own. So it does not really help to take any courses, even the mandatory ones (apart from just getting them off your requirements list). There are also no curriculum and no final exam. And most importantly every minute counts, so spend it by doing actual research.
    
 2. **Prepare to fail a lot and even fail completely**
    
    Good conferences have acceptance rates below 20%, which means that your paper is very likely to be rejected. Perhaps with a harsh criticism from an arrogant reviewer who thinks he is clever and funny. But hey, that is his job and a paper does not define you as a person anyway. So be thankful, use the feedback for improvement, resubmit, learn from it and move on.
    
-   There is also a risk that your idea turns out not being novel or your experiments will show that no advantage over the baseline. This happens a lot, but instead of losing it – learn from this, try to think of more contributions to convince the reader (that is the reviewer) that you work is worth knowing.
+   There is also a risk that your idea turns out not being novel or your experiments will show no advantage over the baseline. This happens a lot, but instead of losing it – learn from this, try to think of more contributions to convince the reader (that is the reviewer) that you work is worth knowing.
    
    Finally, you may fail completely – get bored, do a startup, run out of time, or a hundred of other things. This happens a lot and so it may to happen to you, accept the possibility but know that focus and dedication will get you to the finish line.
    
 3. **Start publishing and going to conferences early**
    
-   It is funny, but for the most PhD's I know the number of papers per year seems to grow exponentially during the first few years. This means that you can nearly double the number of papers by publishing your first paper during the first year instead of the second year. Well, the catch is in my previous point – most likely you will get a reject, but in the worst case you will learn from this process, and in the best case you will go somewhere exotic, warm and nice, get some drinks and have some fun.
+   It is funny, but for the most PhD's I know the number of papers per year seems to grow exponentially during the first few years. This means that you can nearly double the number of papers by publishing your first paper one year earlier. Well, the catch is in my previous point – most likely you will get a reject, but in the worst case you will learn from this process, and in the best case you will go somewhere exotic, warm and nice, get some drinks and have some fun.
    
 4. **Find the conferences you want to go, read the best papers from the past two or three years and copy**
    
@@ -39,7 +39,7 @@ So here it goes:
    
    You don't need a brilliant idea nor solve all the problems at once. However, you must show that your contributions are new and significant in one way or another, submit before the deadline, cross your fingers and start working on the next thing.
    
-   Novelty is so important that in fact some researchers I know have spent a lot of time looking for problems with a minimum or no previous work, and then writing a paper focusing on the novelty of the problem instead of the complexity of the solution. The biggest win of this approach is that in the next few years other researchers will use this work as a seemly naive baseline and therefore generate tons of citations.
+   Novelty is so important that some of the researchers I know have spent a lot of time looking for problems with a minimum or no previous work, and then writing a paper focusing on the novelty of the problem instead of the complexity of the solution. The biggest win of this approach is that in the next few years other researchers will use this work as a seemly naive baseline and therefore generate tons of citations.
    
 6. **Minimize all programming, back-up daily, and use version control, unit tests, checkstyle/findbugs/etc.**
    
