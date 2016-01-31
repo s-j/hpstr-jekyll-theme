@@ -7,6 +7,7 @@ title: Ten things I wish I knew before starting on a PhD
 tags: [self, phd, research]
 share: true
 ---
+
 Taking a PhD is about defining yourself as an independent researcher, becoming a field expert and evolving as a person. A journey, with lots of pitfalls and setbacks, some times exciting and pleasant, some times exhausting and seemly impossible, mostly unplanned and completely unknown beforehand, but hopefully bringing you to the right place at the right time (that is your defense). At least, this is what my PhD was like. Below, I've written down ten things I've learned mostly by trying and failing and then doing the opposite and nailing it. I hope some of these tips will be useful to the PhD students out there and perhaps make their journeys a little bit more straight-forward.
 
 So here it goes:
