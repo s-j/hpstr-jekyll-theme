@@ -28,7 +28,7 @@ So here it goes:
    
    It is funny, but for the most PhD's I know the number of papers per year seems to grow exponentially during the first few years. This means that you can nearly double the number of papers by publishing your first paper one year earlier. Well, the catch is in my previous point – most likely you will get a reject, but in the worst case you will learn from this, and in the best case you will go somewhere exotic, warm and nice, get some drinks and have some fun.
    
-4. **Find the conferences you want to go, read the best papers from the past two or three years and copy**
+4. **Find the conferences you want to go to, read the best papers from the past two or three years and copy their work**
    
    Firstly, I am not talking about plagiarism – that will not get you anywhere good. Nevertheless, most of quality papers from the same conferences turn out being shockingly similar in their writing style, structure, terminology, methodology, data sets, etc. and copying that will get you quite far – if it looks like a good paper and sounds like a good paper, it must be a good paper!
    
