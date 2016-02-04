@@ -58,7 +58,7 @@ So here it goes:
    
 7. **Collaborate and go abroad early**
    
-   I know the feeling: your supervisor is too busy, none of your family and friends understands your work, all reviewers are against you, it takes a hell lot of time to publish a paper and none of your ideas seem to work. So what to do? 
+   I know the feeling: your supervisor is too busy, none of your family members and friends understands your work, all reviewers are against you, it takes a hell lot of time to publish a paper and none of your ideas seem to work. So what to do? 
    
    – Collaborate! Talk to your fellows, even if they are working in completely different fields. Go to their presentations, get them into some kind of discussion, even if they look very annoyed and ask you to leave – oddly enough, this may result in a great paper!  Find another institution that is doing great in your field and go there even without a pay. Find mentors, work with them and learn, and ask for more work after you get back!
    
