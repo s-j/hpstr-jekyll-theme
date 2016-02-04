@@ -52,7 +52,7 @@ So here it goes:
    
    A version control system such as Git is a great tool for organizing your work (including your writing) and tracking your progress. With good commit messages you will able to find when any given part has been changed or what you did on any given day, in addition to keeping all possible versions of your work backed-up and neatly organized. Unit tests and code analysis tools will allow you to modify any part of your code without worrying about a newly introduced bug, thus keeping you more focused towards the deadline. 
    
-   Documenting your code and making it reusable as much as you can will speed-up your future work. Consider also uploading it to the GitHub, thus letting others to learn and reuse.
+   Documenting your code and making it reusable as much as you can will speed-up your future work. However, it is also a highly time consuming task, thus you need to find the right balance. Consider also uploading your code to GitHub, thus letting others to learn and reuse.
    
    Finally, log everything you can from every experiment, not just the very minimum you wanted to present, because this will give you a future opportunity to extend your work without having to redo all the experiments.
    
