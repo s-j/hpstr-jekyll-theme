@@ -14,7 +14,7 @@ So here it goes:
 
 1. **Taking a PhD is not the same as being a student**
    
-   Getting a PhD is not about learning, but about finding things out on your own. Therefore it does not really help to take any courses, even the mandatory ones (apart from just getting them off your requirements list). There are also no curriculum and no final exam. And most importantly, every minute counts, so spend it by doing actual research.
+   Getting a PhD is not about learning, but about finding things out on your own. Therefore, it does not really help to take any courses, even the mandatory ones (apart from just getting them off your requirements list). There are also no curriculum and no final exam. And most importantly, every minute counts, so spend it by doing actual research.
    
 2. **Prepare to fail a lot and even to fail completely**
    
