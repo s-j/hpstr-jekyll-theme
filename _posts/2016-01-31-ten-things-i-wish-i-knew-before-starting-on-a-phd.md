@@ -78,6 +78,6 @@ So here it goes:
    
 10. **Enjoy your spare time, meet new people and friends**
     
-    Most PhD students struggle with loneliness. In fact, it is the greatest challenge you will encounter and the exact thing that turns your brain into a stressed monkey. So join a Judo club – some of those guys may become your best friends forever, but getting smashed against a mat for an hour and a half will surely keep you away from overestimating the importance of your research troubles. In fact, any other sport will do.
+    Most PhD students struggle with loneliness. In fact, it is the greatest challenge you will encounter and the exact thing that turns your brain into a stressed monkey. So join a Judo club – some of those guys may become your best friends forever, and getting smashed against a mat for an hour and a half will surely keep you away from overestimating the importance of your research troubles. In fact, any other sport will do.
     
     Go out, meet a friend, have a drink and enjoy being single and young (that is the loud music and the smell of perfume and sweat). And surely talk to that beautiful girl that looks like Scarlet Johansson – little do you know, a few years later she will be your wife, and you will be sitting there 4 AM in the morning glued to an attention sick little baby that for some odd reason does not want to sleep, so tired that all the all–nighters and deadlines you pulled through your PhD sound like eight hours of the good old sleep. Or maybe not at all – she will just roll her eyes and leave, but take a chance anyway!
