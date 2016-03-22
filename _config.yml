@@ -33,7 +33,7 @@ bing_verify:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Oslo/Norway
 future:      true
-highlighter: rouge
+# highlighter: rouge
 markdown:    kramdown
 gems:
   - jekyll-sitemap
@@ -43,6 +43,8 @@ sass:
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
+
+excerpt_separator: "<!--more-->"
 
 # Amount of post to show on home page
 paginate: 10

@@ -35,7 +35,10 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {{ post.excerpt }}
+	{% if post.content contains '<!--more-->' %}
+    	<p><a href="{{ post.url }}">Read more <i class="fa fa-arrow-circle-right"></i></a></p>
+    {% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
