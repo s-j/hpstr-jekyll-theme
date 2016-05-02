@@ -18,6 +18,4 @@ This week, a few colleagues and I have been to the [JavaZone](http://2014.javazo
 6. [Java 8 Lambdas and Streams for Dummies](http://vimeo.com/105879890) - a nice but very basic introduction to Java 8. Also mentions using JMH for micro-benchmarking.
 7. [33 Things You Want to Do Better](http://vimeo.com/105751257) - an interesting talk; towards the end presents also some useful frameworks, such as Guava and LomBok.
 
-As a bonus, for those who likes mathematics and understands Norwegian – [Kontroversiell matematikk](http://vimeo.com/105857885).
-
-Otherwise, more of this year's presentations and lightning talks can be found [here](https://vimeo.com/album/3031533).
+As a bonus, for those who likes mathematics and understands Norwegian – [Kontroversiell matematikk](http://vimeo.com/105857885). Otherwise, more of this year's presentations and lightning talks can be found [here](https://vimeo.com/album/3031533).
