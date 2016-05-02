@@ -8,7 +8,7 @@ tags: [java, programming, engineering, talks]
 share: true
 ---
 
-Yet another year, and yet another [Javazone](http://2015.javazone.no/) - as always lots of food, new people, old friends and many interesting talks. Long story short, here is my top-5 the most entertaining talks:
+Yet another year, and yet another [Javazone](http://2015.javazone.no/). As always, lots of food, new people, old friends and many interesting talks. Long story short, here is my top-5 the most entertaining talks:
 
 1. [Java 8 JVM Memory and Thread Management](https://vimeo.com/138955223) by Ken Sipe – a very good explanation of the Java memory model and some practical tips.
 2. [Coding Culture](https://vimeo.com/138873440) by Sven Peters – a set of very good suggestions on how to create a great work place for developers.
