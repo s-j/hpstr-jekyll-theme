@@ -1,7 +1,7 @@
 ---
 author: simon.jonassen@gmail.com
 comments: true
-date: 2015-09-12 12:00:00+01:00
+date: 2014-09-12 12:00:00+01:00
 layout: post
 title: The best of Javazone 2014
 tags: [java, programming, engineering, talks]
