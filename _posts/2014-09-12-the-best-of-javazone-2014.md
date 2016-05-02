@@ -8,7 +8,7 @@ tags: [java, programming, engineering, talks]
 share: true
 ---
 
-This week, a few colleagues and I have been to the [JavaZone](http://2014.javazone.no/), which is an annual Java/JVM conference arranged here in Oslo. To me, a conference like this is a great opportunity to learn something new, meet new people and old friends and just have fun. Long story short, here are seven of the best talks, ranged by how good, interesting, funny or relevant they were to me. All seven are in English and are suitable for most (Java) developers:
+This week a few colleagues and I have been to the [JavaZone](http://2014.javazone.no/), which is an annual Java/JVM conference arranged here in Oslo. To me, a conference like this is a great opportunity to learn something new, meet new people and old friends and just have fun. Long story short, here are seven of the best talks, ranged by how good, interesting, funny or relevant they were to me. All seven are in English and are suitable for most (Java) developers:
 
 1. [Practical Considerations For Microservice Architectures](http://vimeo.com/105751281) – a nice talk with some great slides about architecture, design, collaboration and tools.
 2. [Making Steaks from Sacred Cows](http://vimeo.com/105758303) – a hilarious talk about cargo cult programming, how little do we know and the Matrix.
