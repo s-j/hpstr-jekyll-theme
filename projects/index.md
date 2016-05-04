@@ -9,4 +9,4 @@ image:
   creditlink: http://www.tandswebdesign.com/2015/03/more-linkedin-background
 ---
 
-Nothing here yet.
+Nothing here yet, but look at [all the papers](http://s-j.github.io/publications/) I wrote!
