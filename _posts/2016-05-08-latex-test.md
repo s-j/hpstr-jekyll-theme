@@ -6,6 +6,7 @@ layout: post
 title: MathJax Test
 tags: [mathjax, latex, programming, jekyll]
 share: true
+published: false
 ---
 The nice thing of using Jekyll and Github is that math works almost out of the box...
 {% raw %}
