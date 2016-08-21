@@ -3,11 +3,11 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2016-08-21 10:10:00+01:00
 layout: post
-title: HyperLogLog: StreamLib vs Java-HLL (Feb. 2012)
+title: HyperLogLog - StreamLib vs Java-HLL
 tags: [java, programming, hyperloglog, performance]
 share: true
 ---
-A while ago I was looking at cardinality estimators for use in a distributed setting – given a data spread over a set of nodes, we want to compute the total number of unique keys without having to transfer all keys or a global bit signature. Counting sketches such as HyperLogLog (see [here]( http://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/), [here](https://research.neustar.biz/2012/10/25/sketch-of-the-day-hyperloglog-cornerstone-of-a-big-data-infrastructure/) and  [here](https://research.neustar.biz/2013/01/24/hyperloglog-googles-take-on-engineering-hll/) for an introduction) have superior memory usage and cpu performance when cardinality can be estimated with a small error-margin. In the following, I summarize a comparison between the two Java libraries,  [StreamLib](https://github.com/addthis/stream-lib) and [Java-HLL](https://github.com/aggregateknowledge/java-hll), I did back in February 2014.
+A while ago, I was looking at cardinality estimators for use in a distributed setting – given a data set spread over a set of nodes, we want to compute the total number of unique keys without having to transfer all keys or a global bit signature. Counting sketches such as HyperLogLog (see [here]( http://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/), [here](https://research.neustar.biz/2012/10/25/sketch-of-the-day-hyperloglog-cornerstone-of-a-big-data-infrastructure/) and  [here](https://research.neustar.biz/2013/01/24/hyperloglog-googles-take-on-engineering-hll/) for an introduction) have superior memory usage and cpu performance when cardinality can be estimated with a small error margin. In the following, I summarize a comparison between the two Java libraries, [StreamLib](https://github.com/addthis/stream-lib) and [Java-HLL](https://github.com/aggregateknowledge/java-hll), I did back in February 2014. <!--more-->
 
 ## Methods ##
 
@@ -16,7 +16,8 @@ A while ago I was looking at cardinality estimators for use in a distributed set
 * Linear counting (`lincnt`) - hashes values into positions in a bit vector
 and then estimates the number of items based on the number of unset bits.
 
-* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (`ll`) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank `updateRegister(h >>> (Integer.SIZE - k),Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1))`, where `k = log2(m)`. The cardinality is estimated as `Math.pow(2, Ravg) * a`, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
+* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (`ll`) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank
+   `updateRegister(h >>> (Integer.SIZE - k),` `Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1))`, where `k = log2(m)`. The cardinality is estimated as `Math.pow(2, Ravg) * a`, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
 
 * [HyperLogLog](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf) (`hll`) - improves the LogLog algorithm by several aspects, for example by using harmonic mean.
 
@@ -29,10 +30,10 @@ and then estimates the number of items based on the number of unset bits.
 I used two relatively small real-world data sets, similar to what was intended to be used in production. For hashing I used StreamLib's `MurmurHash.hash64`, which for some reason did it better than Guava's on the test data (I haven't investigated the reason though). The latency times given below are cold-start numbers, measured with no respect to JIT and other issues. In other words, these are **not** scientific results.
 
 ### Dataset A ###
-
 The first data set has the following characteristics:
+
 * 3765844 tokens
-* 587913 unique keys (`Sets.newHashSet()`: 977ms)
+* 587913 unique keys (inserting into a `Sets.newHashSet()`: 977ms)
 * 587913 unique hashed keys (`Sets.newHashSet()`: 2520ms)
 
 First lets compare the StreamLib methods tuned for 1% error with 10 mil keys. The collected data includes the name of the method, relative error, total estimator size, total elapsed time. The number behind `ll`, `hll`, `hlp` denotes the `log2(m)` parameter:
@@ -69,11 +70,11 @@ Now, lets compare StreamLib and Java-HLL. The parameter behind `hlp` is `log2(m)
 Here Java-HLL is both more accurate and faster.
 
 ### Dataset B ###
-
 The second data set has the following characteristics:
-  * 3765844 tokens
-  * 2074012 unque keys (`Sets.newHashSet()`: 1195ms)
-  * 2074012 unique hashed keys (`Sets.newHashSet()`: 2885ms)
+
+* 3765844 tokens
+* 2074012 unque keys (`Sets.newHashSet()`: 1195ms)
+* 2074012 unique hashed keys (`Sets.newHashSet()`: 2885ms)
 
 StreamLib methods tuned for 1% error with 10 mil keys:
 
