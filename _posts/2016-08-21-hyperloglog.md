@@ -13,30 +13,29 @@ A while ago, I was looking at cardinality estimators for use in a distributed se
 
 [StreamLib](https://github.com/addthis/stream-lib) implements several methods:
 
-* Linear counting (`lincnt`) - hashes values into positions in a bit vector
+* Linear counting (lincnt) - hashes values into positions in a bit vector
 and then estimates the number of items based on the number of unset bits.
 
-* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (`ll`) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank
-   `updateRegister(h >>> (Integer.SIZE - k),` `Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1))`, where `k = log2(m)`. The cardinality is estimated as `Math.pow(2, Ravg) * a`, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
+* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (ll) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank updateRegister(h >>> (Integer.SIZE - k), Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1)), where k = log2(m). The cardinality is estimated as Math.pow(2, Ravg) * a, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
 
-* [HyperLogLog](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf) (`hll`) - improves the LogLog algorithm by several aspects, for example by using harmonic mean.
+* [HyperLogLog](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf) (hll) - improves the LogLog algorithm by several aspects, for example by using harmonic mean.
 
-* [HyperLogLog++](http://research.google.com/pubs/archive/40671.pdf) (`hlp`) - Google's take on HLL that improves memory usage and accuracy for small cardinalities
+* [HyperLogLog++](http://research.google.com/pubs/archive/40671.pdf) (hlp) - Google's take on HLL that improves memory usage and accuracy for small cardinalities
 
-[Java-HLL](https://github.com/aggregateknowledge/java-hll) (`hlx`) on the other hand provides a set of tweaks to HyperLogLog, mainly exploring the idea that a chunk of data, say 1280 bytes, can be used to fully represent a short sorted list, a sparse/lazy map of non-empty register, or a full register set (see the project page for details).
+[Java-HLL](https://github.com/aggregateknowledge/java-hll) (hlx) on the other hand provides a set of tweaks to HyperLogLog, mainly exploring the idea that a chunk of data, say 1280 bytes, can be used to fully represent a short sorted list, a sparse/lazy map of non-empty register, or a full register set (see the project page for details).
 
 ## Performance comparison ##
 
-I used two relatively small real-world data sets, similar to what was intended to be used in production. For hashing I used StreamLib's `MurmurHash.hash64`, which for some reason did it better than Guava's on the test data (I haven't investigated the reason though). The latency times given below are cold-start numbers, measured with no respect to JIT and other issues. In other words, these are **not** scientific results.
+I used two relatively small real-world data sets, similar to what was intended to be used in production. For hashing I used StreamLib's MurmurHash.hash64, which for some reason did it better than Guava's on the test data (I haven't investigated the reason though). The latency times given below are cold-start numbers, measured with no respect to JIT and other issues. In other words, these are **not** scientific results.
 
 ### Dataset A ###
 The first data set has the following characteristics:
 
 * 3765844 tokens
-* 587913 unique keys (inserting into a `Sets.newHashSet()`: 977ms)
-* 587913 unique hashed keys (`Sets.newHashSet()`: 2520ms)
+* 587913 unique keys (inserting into a Sets.newHashSet(): 977ms)
+* 587913 unique hashed keys (Sets.newHashSet(): 2520ms)
 
-First lets compare the StreamLib methods tuned for 1% error with 10 mil keys. The collected data includes the name of the method, relative error, total estimator size, total elapsed time. The number behind `ll`, `hll`, `hlp` denotes the `log2(m)` parameter:
+First lets compare the StreamLib methods tuned for 1% error with 10 mil keys. The collected data includes the name of the method, relative error, total estimator size, total elapsed time. The number behind ll, hll, hlp denotes the log2(m) parameter:
 
 | name   |  error  | size    | time    |
 |--------|---------|---------|---------|
@@ -47,7 +46,7 @@ First lets compare the StreamLib methods tuned for 1% error with 10 mil keys. Th
 
 Here HLP performs best, with only 0.81% error and using only 5KB memory.
 
-Now, lets compare StreamLib and Java-HLL. The parameter behind `hlp` is `log2(m)`, while the parameters behind `hlx` are `log2(m)`, register width (5 seems like the only one that works), promotion threshold (-1 denotes the `auto` mode) and the initial representation type.
+Now, lets compare StreamLib and Java-HLL. The parameter behind hlp is log2(m), while the parameters behind hlx are log2(m), register width (5 seems like the only one that works), promotion threshold (-1 denotes the auto mode) and the initial representation type.
 
 | name              |  error  |   size |  time |
 |-------------------|---------|--------|-------|
@@ -73,8 +72,8 @@ Here Java-HLL is both more accurate and faster.
 The second data set has the following characteristics:
 
 * 3765844 tokens
-* 2074012 unque keys (`Sets.newHashSet()`: 1195ms)
-* 2074012 unique hashed keys (`Sets.newHashSet()`: 2885ms)
+* 2074012 unque keys (Sets.newHashSet(): 1195ms)
+* 2074012 unique hashed keys (Sets.newHashSet(): 2885ms)
 
 StreamLib methods tuned for 1% error with 10 mil keys:
 
@@ -116,7 +115,7 @@ Nevertheless, HLL is clearly a method to use. A really nice feature of HLL is th
 
 ### Open question ###
 
-The *register width* in LogLog methods is the number of bits needed to represent the position maximum position of the first 1 bit. There are `m = (beta / se)^2` such registers, where beta is a method-related constant and se is desired standard error, say 0.01. I guess this comes from `StdErr = StdDev / sqrt(N)` for a sample mean of a population (ref. [wikipedia](http://en.wikipedia.org/wiki/Relative_standard_error#Relative_standard_error)), but my knowledge of statistics is a bit too rusty to really understand this. Consequently, my understanding of the papers is that LogLog has `beta = 1.30`, HLL has `beta = 1.106` and HLL++ has `beta = 1.04`, but I might be wrong. After all StreamLib code used these three numbers completely randomly in methods and tests. When I asked what was correct, they asked me back. Honestly, I don't know :)
+The *register width* in LogLog methods is the number of bits needed to represent the position maximum position of the first 1 bit. There are m = (beta / se)^2 such registers, where beta is a method-related constant and se is desired standard error, say 0.01. I guess this comes from StdErr = StdDev / sqrt(N) for a sample mean of a population (ref. [wikipedia](http://en.wikipedia.org/wiki/Relative_standard_error#Relative_standard_error)), but my knowledge of statistics is a bit too rusty to really understand this. Consequently, my understanding of the papers is that LogLog has beta = 1.30, HLL has beta = 1.106 and HLL++ has beta = 1.04, but I might be wrong. After all StreamLib code used these three numbers completely randomly in methods and tests. When I asked what was correct, they asked me back. Honestly, I don't know :)
 
 ### The Code ###
 
