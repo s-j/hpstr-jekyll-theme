@@ -6,9 +6,7 @@ layout: post
 title: HyperLogLog - StreamLib vs Java-HLL
 tags: [java, programming, hyperloglog, performance]
 share: true
-kramdown: 
-  syntax_highlighter_opts:
-    disable : true
+
 ---
 A while ago, I was looking at cardinality estimators for use in a distributed setting – given a data set spread over a set of nodes, we want to compute the total number of unique keys without having to transfer all keys or a global bit signature. Counting sketches such as HyperLogLog (see [here]( http://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/), [here](https://research.neustar.biz/2012/10/25/sketch-of-the-day-hyperloglog-cornerstone-of-a-big-data-infrastructure/) and  [here](https://research.neustar.biz/2013/01/24/hyperloglog-googles-take-on-engineering-hll/) for an introduction) have superior memory usage and cpu performance when cardinality can be estimated with a small error margin. In the following, I summarize a comparison between the two Java libraries, [StreamLib](https://github.com/addthis/stream-lib) and [Java-HLL](https://github.com/aggregateknowledge/java-hll), I did back in February 2014. <!--more-->
 
