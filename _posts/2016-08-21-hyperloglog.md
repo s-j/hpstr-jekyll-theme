@@ -17,7 +17,7 @@ A while ago, I was looking at cardinality estimators for use in a distributed se
 * Linear counting (`lincnt`) - hashes values into positions in a bit vector
 and then estimates the number of items based on the number of unset bits.
 
-* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (`ll`) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank `updateRegister(h >>> (Integer.SIZE - k), Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1))`, where `k = log2(m)`. The cardinality is estimated as `Math.pow(2, Ravg) * a`, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
+* [LogLog](http://algo.inria.fr/flajolet/Publications/DuFl03-LNCS.pdf) (`ll`) - uses hashing to add an element to one of the m different estimators, and updates the maximum observed rank `updateRegister(h >>> (Integer.SIZE - k)`, `Integer.numberOfLeadingZeros((h << k) | (1 << (k - 1))) + 1))`, where `k = log2(m)`. The cardinality is estimated as `Math.pow(2, Ravg) * a`, where Ravg is the average maximum observed rank across the m registers and a is the a correction function for the given m (see the paper for details).
 
 * [HyperLogLog](http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf) (`hll`) - improves the LogLog algorithm by several aspects, for example by using harmonic mean.
 
