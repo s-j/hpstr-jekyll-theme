@@ -59,11 +59,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+    line_numbers: false
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
