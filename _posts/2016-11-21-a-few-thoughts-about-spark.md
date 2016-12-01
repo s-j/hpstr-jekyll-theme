@@ -15,7 +15,7 @@ My earlier implementation of [text-classification for Reuters 21578](https://git
 
 Recently, the API has been extended with pipelines and many interesting features (most likely inspired by Scikit-Learn) making it really easy to implement a classifier in just a few lines of code, for example:
 
-```python
+{% highlight python %}
 labelIndexer = StringIndexer(inputCol="label_text", outputCol="label")
 tokenizer = Tokenizer(inputCol="text", outputCol="tokens")
 remover = StopWordsRemover(inputCol=tokenizer.getOutputCol(), outputCol="filtered")
@@ -28,7 +28,8 @@ result = model.transform(test_paired)
 predictionAndLabels = result.select("prediction", "label")
 evaluator = MulticlassClassificationEvaluator(metricName="accuracy")
 print("Test set accuracy = " + str(evaluator.evaluate(predictionAndLabels)))
-```
+{% endhighlight %}
+
 Nevertheless, this new DataFrame-based part of the API has not yet reached parity with the old RDD-based part of the API. The latter is planned to be deprecated when this happens, but currently some of the methods are available only through the old part of the API. In other words, a strong dependency between the algorithms and the underlying data structure is a real problem here. I only hope that the same will not happen again if the DataFrame concept gets replaced by a better idea in a year or two.
 
 Finally, although there are quite many resources available online (books, courses, talks, slides, etc.), the documentation of MLlib is far from good (especially the API docs) and the customization part beyond simple examples is a nightmare (an exercise for the reader: add bigrams to the pipeline above), if possible at all. On the positive side, Spark is great for certain use cases and is being actively developed with lots of interesting features and ideas coming up next.
