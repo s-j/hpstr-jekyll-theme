@@ -46,9 +46,10 @@ Our model can easily predict the following:
  ("hello simon welcome to new york. enjoy it here and london", ["London", "New York"])]
 </pre>
 
-But how? Well, [we know](http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression) that the model's decision computes a dot product between the input features and the trained weights and we can actually see the computed numbers:
+But how? Well, [we know](http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression) that the model's decision function computes a dot product between the input features and the trained weights and we can actually see the computed numbers:
 
 ```python
+
 print(pipeline.decision_function(X_test))
 ```
 
