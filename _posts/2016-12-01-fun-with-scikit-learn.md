@@ -12,7 +12,7 @@ image:
   creditlink: http://existingtoys.com/
 
 ---
-[Scikit-Learn](http://scikit-learn.org/) is a really great library to start machine learning with, because it combines a powerful API, solid documentation, and a large variety of methods with lots of different options and sensible defaults. For example, if we have a classification problem of predicting whether a sentence is about New-York, London or both, we can create a pipeline including tokenization with case folding and stop-word removal, bigram extraction, tf-idf weighting and support for multiple labels, train and apply it in merely 8 lines of code (well, excluding imports and input specification).<!--more-->
+[Scikit-Learn](http://scikit-learn.org/) is a great library to start machine learning with, because it combines a powerful API, solid documentation, and a large variety of methods with lots of different options and sensible defaults. For example, if we have a classification problem of predicting whether a sentence is about New-York, London or both, we can create a pipeline including tokenization with case folding and stop-word removal, bigram extraction, tf-idf weighting and support for multiple labels, train and apply it in merely 8 lines of code (well, excluding imports and input specification).<!--more-->
 
 {% highlight python %}
 vec = TfidfVectorizer(ngram_range=(1, 2), stop_words='english', max_features=15)
