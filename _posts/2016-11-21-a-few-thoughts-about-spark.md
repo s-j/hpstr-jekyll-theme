@@ -4,12 +4,12 @@ comments: true
 date: 2016-11-21 20:10:00+01:00
 layout: post
 title: A few thoughts about Spark
-tags: [machine learning, programming, java, python, spark,]
+tags: [machine learning, programming, java, python, spark]
 share: true
 ---
 Recently I have been working on a text-classification task. Along the way I have tested out three interesting machine learning frameworks which I would like to address in the next few posts. This time I start with the [Apache Spark](https://spark.apache.org)'s MLlib.<!--more-->
 
-Spark got my attention [quite a long time ago](http://www.slideshare.net/s-j/yet-another-intro-to-apache-spark) and it is extremely useful for data exploration tasks where you can simply put lots of data on HDFS and then use a Jupyter notebook to transform the data interactively. However, although training is preferably done offline using a large number of examples (where Spark becomes handy), the classification part is often desired to be a short-latency/high-throughput task. As the framework itself brings quite a lot of overhead, it could be nice if the API methods could be executed without the Spark cluster when necessary. In that case you could use the cluster to build a model, serialize and ship it to a worker, which will then use the model on the incoming instances. 
+Spark got my attention [quite a long time ago](http://www.slideshare.net/s-j/yet-another-intro-to-apache-spark) and it is extremely useful for data exploration tasks where you can simply put lots of data on HDFS and then use a Jupyter notebook to transform the data interactively. However, although training is preferably done offline using a large number of examples (where Spark becomes handy), the classification part is often desired to be a short-latency/high-throughput task. As the framework itself brings quite a lot of overhead, it could be nice if the API methods could be executed without the Spark cluster when necessary. In that case you could use the cluster to build a model, serialize and ship it to a worker, which will then use the model on the incoming instances.
 
 My earlier implementation of [text-classification for Reuters 21578](https://github.com/s-j/reuters21578) can be executed as a simple JAR, but [as I wrote earlier, it was quite a dance to do this correctly](http://s-j.github.io/running-apache-spark-from-a-jar/). Moreover, in that example I have used the RDD part of the MLlib API and ended up with a very verbose Java code.
 
