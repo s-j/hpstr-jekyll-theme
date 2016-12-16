@@ -47,7 +47,7 @@ permalink:   /:categories/:title/
 excerpt_separator: "<!--moremore-->"
 
 # Amount of post to show on home page
-paginate: 10
+paginate: 5
 
 kramdown:
   auto_ids: true
