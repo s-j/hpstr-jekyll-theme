@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2017-04-17 22:00:00+01:00
 layout: post
-title: Engineering at Cxense
+title: Software Engineering at Cxense
 tags: [cxense, engineering]
 share: true
 image:
