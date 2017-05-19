@@ -7,7 +7,7 @@ title: Software Engineering at Cxense
 tags: [cxense, engineering]
 share: true
 image:
-  feature: cxense_bg.png
+  feature: cxoffice.jpg
   credit: cxense
   creditlink: http://www.cxense.com
 
