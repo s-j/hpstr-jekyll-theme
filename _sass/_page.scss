@@ -204,7 +204,7 @@ header .entry-meta {
 		padding: 10px 15px;
 		background-color: $white;
 		box-shadow: 0 0 0 0, 0 6px 12px rgba($black,0.1);
-		text-align: justify;
+		// text-align: justify;
 		@include rounded(3px);
 		@media #{$medium} {
 			margin-left: 10px;
@@ -369,7 +369,7 @@ header .entry-meta {
 		@include rounded(3px);
 		margin-bottom: 20px;
 		padding: 25px 15px;
-		text-align: justify;
+		// text-align: justify;
 		@media #{$medium} {
 			padding: 30px;
 		}
