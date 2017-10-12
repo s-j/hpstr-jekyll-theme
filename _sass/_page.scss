@@ -15,7 +15,7 @@ body {
 	}
 }
 .entry-content {
-	@include font-size(18);
+	@include font-size(16);
 	// Dotted line underlines for links
 	p > a,
 	li > a {
@@ -50,7 +50,7 @@ body {
 	}
 	h2 {
 		margin: 0;
-		@include font-rem(18);
+		@include font-rem(16);
 		text-transform: uppercase;
 		color: lighten($base-color,40);
 		@media #{$medium} {
@@ -212,7 +212,7 @@ header .entry-meta {
 			padding: 20px 30px;
 		}
 		@media #{$large} {
-			max-width: 880px;
+			max-width: 800px;
 			margin: 50px auto 30px auto;
 			padding: 50px 80px;
 			> p:first-child {
@@ -232,7 +232,7 @@ header .entry-meta {
 			padding: 20px 30px;
 		}
 		@media #{$large} {
-			max-width: 880px;
+			max-width: 800px;
 			padding: 50px 80px;
 			margin: 0 auto 30px auto;
 		}
@@ -285,7 +285,7 @@ header .entry-meta {
 		padding: 50px 40px 25px;
 	}
 	@media #{$large} {
-		max-width: 880px;
+		max-width: 800px;
 		padding: 50px 80px;
 		margin: 60px auto;
 	}
@@ -357,7 +357,7 @@ header .entry-meta {
 			margin-right: 20px;
 		}
 		@media #{$large} {
-			max-width: 880px;
+			max-width: 800px;
 			margin-top: 50px;
 			margin-left: auto;
 			margin-right: auto;
