@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2017-09-01 00:00:00+01:00
 layout: post
-title: Starting with online experiments
+title: On designing and running online experiments
 tags: [statistics, experimentation, data science, todayilearned, bunchoflinks]
 share: true
 ---
