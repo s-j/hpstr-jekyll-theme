@@ -4,7 +4,7 @@ comments: true
 date: 2017-09-01 00:00:00+01:00
 layout: post
 title: Starting with online experiments
-tags: [experimentation, data science, todayilearned, bunchoflinks]
+tags: [statistics, experimentation, data science, todayilearned, bunchoflinks]
 share: true
 ---
 
