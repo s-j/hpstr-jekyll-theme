@@ -8,8 +8,8 @@ tags: [today_i_learned, programming, android, osx]
 share: true
 ---
 
-[Flutter](https://flutter.io/) is a great Google SDK allowing to effortless creation of mobiles apps with native interfaces
-on iOS and Android in record time. To install it in 30 minutes or less, follow [the official installation instructions](https://flutter.io/get-started/install/). Here are a few additional tips:
+[Flutter](https://flutter.io/) is a great Google SDK allowing effortless creation of mobile apps with native interfaces
+on iOS and Android. To install it in 30 minutes or less, follow [the official installation instructions](https://flutter.io/get-started/install/). Here are a few additional tips:
 
 * If you are using [fish](https://fishshell.com/), add `set PATH /Users/simonj/flutter/bin $PATH` to your `.config/fish/config.fish`
 * For android emulation support install Androind Studio and [create a new emulated device](https://developer.android.com/studio/run/managing-avds), lets call it Pixel_2_API_26. To launch the emulator, run `~/Library/Android/sdk/tools/emulator -avd Pixel_2_API_26`
