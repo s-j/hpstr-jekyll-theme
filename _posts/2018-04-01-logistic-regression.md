@@ -10,7 +10,7 @@ share: true
 
 In the following, I briefly show how `coef_`, `intercept_`, `decision_function`, `predict_proba` and `predict` are connected in case of a binary [LogisticRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html) model.
 
-Assume we train a model like this:
+Assume we have trained a model like this:
 
 ```python
 >>> ...
@@ -18,7 +18,7 @@ Assume we train a model like this:
 >>> lrmodel.fit(X_train, y_train)
 ```
 
-The model's `coef_` attribute will represend learned feature weights (w) and `intercept_` will represent the bias (b). Then the `decision_function` is equivalent to a matrix of x · w + b:
+The model's `coef_` attribute represents learned feature weights (w) and `intercept_` represents the bias (b). Then the `decision_function` is equivalent to a matrix of x · w + b:
 
 ```python
 >>> (X_test @ lrmodel.coef_[0].T + lrmodel.intercept_)[:5]
@@ -28,7 +28,7 @@ The model's `coef_` attribute will represend learned feature weights (w) and `in
     array([-0.09915005,  0.17611527, -0.14162106, -0.03107271, -0.01813942])
 ```
 
-Now if we take sigmoid of the decision function:
+Now, if we take sigmoid of the decision function:
 
 ```python
 >>> def sigmoid(X): return 1 / (1 + np.exp(-X))
