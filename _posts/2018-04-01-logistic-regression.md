@@ -1,4 +1,3 @@
-
 ---
 author: simon.jonassen@gmail.com
 comments: true
