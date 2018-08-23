@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2018-06-01 00:00:00+01:00
 layout: post
-title: Getting started with Flutter in 30 minutes or less.
+title: Get started with Flutter in 30 minutes
 tags: [today_i_learned, programming, android, osx]
 share: true
 ---
