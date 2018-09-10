@@ -7,6 +7,7 @@ title: Playing with code
 description: "Examples and code for displaying images in posts."
 tags: [java, programming, algorithms, puzzles]
 share: true
+use_math: true
 ---
 
 I haven’t been programming algorithms for fun for the last 4, maybe 5 years. At the moment I have realized that it could be a good thing to do… So this is the first try :)
@@ -88,4 +89,4 @@ public static String printDP(int x) {
 }
 {% endhighlight %}
 
-The running time is O(n^3).
+The running time is $$O(n^3)$$.
