@@ -3,8 +3,8 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2018-09-18 00:00:00+01:00
 layout: post
-title: Get started with Flutter in 30 minutes
-tags: [today_i_learned, programming, android, osx]
+title: Get started with Open AI Gym on Windows 10
+tags: [today_i_learned, programming, machine learning, ai]
 share: true
 ---
 
