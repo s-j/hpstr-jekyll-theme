@@ -11,7 +11,7 @@ share: true
 
 [Open AI Gym](https://gym.openai.com/) is a fun toolkit for developing and comparing reinforcement learning algorithms. It provides a variety of environments ranging from [classical control problems](https://gym.openai.com/envs/#classic_control), to [Atari games](https://gym.openai.com/envs/#atari) and [goal-based robot tasks](https://gym.openai.com/envs/#robotics). Currently it requires an amout of effort to install and AI Gym on Windows 10, in particular you need to recursively install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Ubuntu](https://www.ubuntu.com), [Anaconda](https://www.anaconda.com), Open AI Gym and do a rain dance to render simulation back to you. To make things a bit easier later we also want to use [Jupyter Notebook](http://jupyter.org/). So here are the step-by-step deails as of September 2018.
 
-To install the Linux subsystem, you can simply run the following command as administrator in Power Shell:
+To install the Linux subsystem, you simply run the following command as administrator in Power Shell:
 
 ```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -33,15 +33,14 @@ chmod +x Anaconda3-5.2.0-Linux-x86_64.sh
 ./Anaconda3-5.2.0-Linux-x86_64.sh
 ```
 
-Before proceeding ensure you have something like this in your .bashrc:
+Ensure that your .bashrc file has been modified as necessary, relaunch the terminal and create a new environment:
 
 ```bash
-export PATH=/home/username/anaconda3/bin:$PATH
+conda create --name gym python=3.5
+conda activate gym
 ```
 
-run `source .bashrc` or relaunch your terminal.
-
-Now, we can create and install the Gym, as follows:
+Now install Gym as follows:
 
 ```bash
 git clone https://github.com/openai/gym
@@ -54,14 +53,14 @@ As we are also going to need matplotlib, run:
 pip install matplotlib
 ```
 
-Next we have to install jypyter notebooks and create a kernel pointing to your environment:
+Next install jypyter notebooks and create a kernel pointing to your gym environment:
 
 ```bash
 conda install jupyter nb_conda ipykernel
 python -m ipykernel install --user --name gym
 ```
 
-Now we can run the magic command:
+And then run the magic command:
 
 ```bash
 xvfb-run -s "-screen 0 1400x900x24" ~/anaconda3/bin/jupyter-notebook --allow-root --no-browser
@@ -69,7 +68,7 @@ xvfb-run -s "-screen 0 1400x900x24" ~/anaconda3/bin/jupyter-notebook --allow-roo
 
 it will shortly prompt an address you can paste into your browser. 
 
-Create a new notebook by clicking "New" and then "gym", and add something like this:
+Finally, create a new notebook by clicking "New" and then "gym", and add something like this:
 
 ```python
 import gym
