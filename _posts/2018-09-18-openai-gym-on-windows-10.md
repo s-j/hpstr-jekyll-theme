@@ -8,8 +8,9 @@ tags: [today_i_learned, programming, machine learning, ai]
 share: true
 ---
 
-
 [Open AI Gym](https://gym.openai.com/) is a fun toolkit for developing and comparing reinforcement learning algorithms. It provides a variety of environments ranging from [classical control problems](https://gym.openai.com/envs/#classic_control) and [Atari games](https://gym.openai.com/envs/#atari) to [goal-based robot tasks](https://gym.openai.com/envs/#robotics). Currently it requires an amout of effort to install and AI Gym on Windows 10. In particular you need to recursively install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), [Ubuntu](https://www.ubuntu.com), [Anaconda](https://www.anaconda.com), Open AI Gym and do a robot dance to render simulation back to you. To make things a bit easier later you would also like to use [Jupyter Notebook](http://jupyter.org/). So here is a brief step-by-step description as of September 2018.
+
+![The end result in action](http://s-j.github.io/images/cartpole.png)
 
 First we install the Linux subsystem by simply running the following command as Administrator in Power Shell:
 
@@ -74,10 +75,10 @@ Next we create a new notebook by choosing "New" and then "gym" (thus launching a
 
 ```python
 import gym
+import 
 env = gym.make('CartPole-v0')
 
 from IPython import display
-import matplotlib
 import matplotlib.pyplot as plt
 %matplotlib inline
 
@@ -94,5 +95,3 @@ for _ in range(100):
 This tells to create a new cart pole experiment and perform 100 iterations of doing a random action and rendering the environment to the notebook.
 
 If you are lucky, hitting enter will display an animation of a cart pole failing to balance. Congratulations, this is your first simulation! Replace 'CartPole-v0' with 'Breakout-v0' and rerun - we are gaming! AWESOME!
-
-![Open AI Gym in Action](http://s-j.github.io/images/cartpole.png)
