@@ -90,4 +90,4 @@ for _ in range(100):
     env.step(action)
 ```
 
-Hit enter and if you are lucky, you will get your first Open AI gym simulation running!
+Hit enter and if you are lucky, you will get your first Open AI Gym simulation running!
