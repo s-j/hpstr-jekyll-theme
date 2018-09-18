@@ -17,7 +17,7 @@ First we install the Linux subsystem by simply running the following command as 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-After restarting the computer, install [Ubuntu 18.04](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q) from the Microsoft Store, launch and run system update:
+After restarting the computer, install [Ubuntu 18.04](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q) from the Windows Store, launch and run system update:
 
 ```bash
 sudo apt-get update
