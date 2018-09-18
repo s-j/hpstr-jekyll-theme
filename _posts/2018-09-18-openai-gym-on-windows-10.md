@@ -90,4 +90,4 @@ for _ in range(100):
     env.step(action)
 ```
 
-Hit enter and if you are lucky, you will get your first Open AI Gym simulation running!
+Hit enter and if you are lucky, you will get your first cartpole simulation running. Swap 'CartPole-v0' out with 'Breakout-v0' and we are gaming - AWESOME!
