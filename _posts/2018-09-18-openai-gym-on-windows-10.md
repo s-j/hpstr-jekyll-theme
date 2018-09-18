@@ -94,3 +94,5 @@ for _ in range(100):
 This tells to create a new cart pole experiment and perform 100 iterations of doing a random action and rendering the environment to the notebook.
 
 If you are lucky, hitting enter will display an animation of a cart pole failing to balance. Congratulations, this is your first simulation! Replace 'CartPole-v0' with 'Breakout-v0' and rerun - we are gaming! AWESOME!
+
+![Open AI Gym in Action](http://s-j.github.io/images/cartpole.png)
