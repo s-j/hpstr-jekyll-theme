@@ -39,7 +39,7 @@ Before proceeding ensure you have something like this in your .bashrc:
 export PATH=/home/username/anaconda3/bin:$PATH
 ```
 
-- run `source .bashrc` or relaunch your terminal.
+run `source .bashrc` or relaunch your terminal.
 
 Now, we can create and install the Gym, as follows:
 
