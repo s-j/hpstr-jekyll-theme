@@ -294,7 +294,7 @@ From here we can start, stop, update and scale our jobs using [Aurora's client c
 
 ### THE EXPERIENCE
 
-Initially I has been quite skeptical about using Python/Scikit-Learn in production. My suspicions "were confirmed" by a few obstacles:
+Initially I was quite skeptical about using Python/Scikit-Learn in production. My suspicions "were confirmed" by a few obstacles:
 
 1. The gRPC threads above are bound to one CPU and it is really hard to do anything about that in Python. However, this is not a big deal as we can scale by instances instead of cores. In fact, it is better.
 2. Ocasionally tasks get assigned to "slow" nodes which makes 90+ percentile latency higher in orders of magnitude. After some investigation with colleagues, we found that this may happen on I/O overloaded nodes. Delayed logging demonstrated above gave us a dramatic improvement here, so it wasn't that much of issue anymore. Otherwise, we could add a supervisor to restart of unlucky jobs.
