@@ -306,6 +306,6 @@ So in total, the experience in prod was quite postive. Apart from the points men
 On the final note, here is a dashboard illustrating the performance on production traffic in one of our datacenters (the legend was removed from some of the charts).
 
 <figure>
-	<img src="http://localhost:4000/images/clf1.png" alt="">
-	<img src="http://localhost:4000/images/clf2.png" alt="">
+	<img src="http://s-j.github.io/images/clf1.png" alt="">
+	<img src="http://s-j.github.io/images/clf2.png" alt="">
 </figure>
