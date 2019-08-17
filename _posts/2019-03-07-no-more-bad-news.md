@@ -3,7 +3,7 @@ author: simon.jonassen@gmail.com
 comments: true
 date: 2019-03-07 00:00:00+01:00
 layout: post
-title: News recommendation with ML and NLP.
+title: News recommendation with ML and NLP
 tags: [talk, programming, machine learning, ai]
 share: true
 ---
